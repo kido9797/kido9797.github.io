@@ -34,11 +34,13 @@
         </address>
 <p>In <a href="https://kido9797.github.io/category/tensorflow.html">Tensorflow</a>.</p>
 
-</footer><!-- /.post-info --><p>Below is the way I installed TF </p>
-<div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">tensorflow</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.5</span>
-<span class="n">source</span> <span class="n">activate</span> <span class="n">tensorflow</span>
-<span class="n">conda</span> <span class="n">install</span> <span class="n">pandas</span> <span class="n">matplotlib</span> <span class="n">jupyter</span> <span class="n">notebook</span> <span class="n">scipy</span> <span class="n">scikit</span><span class="o">-</span><span class="n">learn</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">tensorflow</span>
+</footer><!-- /.post-info --><p>To start using my GPU, I am trying to install tensorflow on my quite old Xeon computer.</p>
+<p>Below is the way I installed TF </p>
+<div class="highlight"><pre><span></span>conda create -n tensorflow <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.5
+<span class="nb">source</span> activate tensorflow
+conda install pandas matplotlib jupyter notebook scipy scikit-learn
+pip install tensorflow
+pip install tensorflow-gpu
 </pre></div>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
