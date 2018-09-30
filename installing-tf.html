@@ -1,85 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>Installing TF</title>
-        <link rel="stylesheet" href="https://kido9797.github.io/theme/css/main.css" />
-        <link href="https://kido9797.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Learning TF Atom Feed" />
-        <link href="https://kido9797.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Learning TF RSS Feed" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kido Log, Journey to the Unknowns">
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <link rel="alternate"  href="https://kido9797.github.io/feeds/all.atom.xml" type="application/atom+xml" title="Kido Log Full Atom Feed"/>
+        <link rel="alternate" href="https://kido9797.github.io/feeds/all.rss.xml" type="application/rss+xml" title="Kido Log Full RSS Feed"/>
+
+        <title>Installing TF // Kido Log // Journey to the Unknowns</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kido9797.github.io/theme/css/pure.css">
+    <link rel="stylesheet" href="https://kido9797.github.io/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://kido9797.github.io/">Learning TF </a></h1>
-                <nav><ul>
-                    <li><a href="https://kido9797.github.io/category/misc.html">Misc</a></li>
-                    <li class="active"><a href="https://kido9797.github.io/category/tensorflow.html">Tensorflow</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="https://kido9797.github.io/installing-tf.html" rel="bookmark"
-           title="Permalink to Installing TF">Installing TF</a></h1>
-    </header>
-
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-09-29T01:10:00+08:00">
-                Published: Sat 29 September 2018
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://kido9797.github.io/author/kido.html">Kido</a>
-        </address>
-<p>In <a href="https://kido9797.github.io/category/tensorflow.html">Tensorflow</a>.</p>
-
-</footer><!-- /.post-info -->      <p>To start using my GPU, I am trying to install tensorflow on my quite old Xeon computer.</p>
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://kido9797.github.io/author/kido.html" title="See posts by Kido">
+                </a>
+                <h2 class="article-info">Kido</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Sat 29 September 2018</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Installing TF</h1>
+                        <p class="post-meta">
+                            // under                         </p>
+                </header>
+            </section>
+            <p>To start using my GPU, I am trying to install tensorflow on my quite old Xeon computer.</p>
 <p>Below is the way I installed TF </p>
-<div class="highlight"><pre><span></span>conda create -n tensorflow <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.5
-<span class="nb">source</span> activate tensorflow
-conda install pandas matplotlib jupyter notebook scipy scikit-learn
-pip install tensorflow
-pip install tensorflow-gpu
+<div class="highlight"><pre><span></span>&gt; conda create -n tensorflow <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.5
+&gt; <span class="nb">source</span> activate tensorflow
+&gt; conda install pandas matplotlib jupyter notebook scipy scikit-learn
+&gt; pip install tensorflow
+&gt; pip install tensorflow-gpu
 </pre></div>
-    </div><!-- /.entry-content -->
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Kido Log &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://kido9797.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            <li><a href="https://kido9797.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>
