@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Kido Log</title><link>https://kido9797.github.io/</link><description></description><lastBuildDate>Sat, 29 Sep 2018 01:10:00 +0800</lastBuildDate><item><title>Installing TF</title><link>https://kido9797.github.io/installing-tf.html</link><description>&lt;p&gt;To start using my GPU, I am trying to install tensorflow on my quite old Xeon computer.&lt;/p&gt;
-&lt;p&gt;Below is the way I installed TF &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; conda create -n tensorflow &lt;span class="nv"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;.5
-&amp;gt; &lt;span class="nb"&gt;source&lt;/span&gt; activate tensorflow
-&amp;gt; conda install pandas matplotlib jupyter notebook scipy scikit-learn
-&amp;gt; pip install tensorflow
-&amp;gt; pip install tensorflow-gpu
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kido</dc:creator><pubDate>Sat, 29 Sep 2018 01:10:00 +0800</pubDate><guid isPermaLink="false">tag:kido9797.github.io,2018-09-29:/installing-tf.html</guid></item><item><title>My first title</title><link>https://kido9797.github.io/my-first-title.html</link><description>&lt;p&gt;This is the content of my first blog post.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kido</dc:creator><pubDate>Sat, 29 Sep 2018 01:00:00 +0800</pubDate><guid isPermaLink="false">tag:kido9797.github.io,2018-09-29:/my-first-title.html</guid></item></channel></rss>
