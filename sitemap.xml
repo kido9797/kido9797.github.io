@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kido9797.github.io/</loc>
-<lastmod>2018-10-01T00:25:32-00:00</lastmod>
+<lastmod>2018-10-02T15:47:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kido9797.github.io/archives.html</loc>
-<lastmod>2018-10-01T00:25:32-00:00</lastmod>
+<lastmod>2018-10-02T15:47:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kido9797.github.io/tags.html</loc>
-<lastmod>2018-10-01T00:25:32-00:00</lastmod>
+<lastmod>2018-10-02T15:47:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kido9797.github.io/categories.html</loc>
-<lastmod>2018-10-01T00:25:32-00:00</lastmod>
+<lastmod>2018-10-02T15:47:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -69,6 +69,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://kido9797.github.io/category/tensorflow.html</loc>
 <lastmod>2018-09-29T01:10:00+07:37</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kido9797.github.io/tag/kera.html</loc>
+<lastmod>2018-10-01T00:15:00+07:37</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kido9797.github.io/tag/python.html</loc>
+<lastmod>2018-10-01T00:15:00+07:37</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kido9797.github.io/tag/tensorflow.html</loc>
+<lastmod>2018-09-29T01:10:00+07:37</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://kido9797.github.io/tag/test.html</loc>
+<lastmod>2018-09-29T01:00:00+07:37</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
