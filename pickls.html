@@ -6,10 +6,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Kido" />
-        <title>tensorflow</title>
+        <title>Pickls</title>
         
-        <meta name="description" content="Journey to the Unknown" />
-        <meta name="keywords" content="Blog "/>
+<meta name="description" content="&lt;p&gt;Pickle example&lt;/p&gt;" />
+<meta name="keywords" content=" tensorflow python misc  "/>
 
         <!--[if !IE 7]>
         <style type="text/css">
@@ -21,6 +21,7 @@
         <script src="https://kido9797.github.io/theme/js/modernizr.js"></script>
 
         <link href="https://kido9797.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Learning Notebook Full Atom Feed" />
+        <link href="https://kido9797.github.io/feeds/tensorflow.atom.xml" type="application/atom+xml" rel="alternate" title="The Learning Notebook Categories Atom Feed" />
 
         <script type="text/javascript">
             var disqus_shortname = 'https://kido9797.github.io'; 
@@ -50,7 +51,7 @@
                         <ul class="right">
                             <li><a href="https://kido9797.github.io/category/kera.html">kera</a></li>
                             <li><a href="https://kido9797.github.io/category/misc.html">misc</a></li>
-                            <li><a href="https://kido9797.github.io/category/tensorflow.html">tensorflow</a></li>
+                            <li class="active"><a href="https://kido9797.github.io/category/tensorflow.html">tensorflow</a></li>
                         </ul>
                     </section>
                 </nav>
@@ -64,11 +65,9 @@
             
                 <div id="contents">
 <div class="row">
-    <div class="small-12 columns">
-        <h2>Articles with tag &ldquo;tensorflow&rdquo;</h2>
-          <section class="summary">
-    <h3><a href="https://kido9797.github.io/pickls.html" rel="bookmark" title="Permalink to Pickls">Pickls</a></h3>
-    <div class="row info-bar" style="margin-left:0rem;margin-bottom:6px;">
+    <div class="small-12 columns article">
+        <h2>Pickls</h2>
+        <div class="row info-bar" style="margin-left:0rem;margin-bottom:6px;">
     <div class="small-12 columns">
         <ul class="inline-list">
             <li><span><i class="fa fa-calendar"></i>&nbsp; Tue 02 October 2018</span></li>
@@ -85,65 +84,55 @@
         </ul>
     </div>
 </div>
-    <div class="row summary">
-        <div class="small-12 medium-12 columns">
-            <p>Pickle example</p>
-            <p class='text-right'><a href="https://kido9797.github.io/pickls.html">Continue reading&hellip;</a></p>
-        </div>
-    </div>
-</section>
-  <section class="summary">
-    <h3><a href="https://kido9797.github.io/long-operations.html" rel="bookmark" title="Permalink to Long Operations">Long Operations</a></h3>
-    <div class="row info-bar" style="margin-left:0rem;margin-bottom:6px;">
-    <div class="small-12 columns">
-        <ul class="inline-list">
-            <li><span><i class="fa fa-calendar"></i>&nbsp; Tue 02 October 2018</span></li>
-            <li><span><i class="fa fa-folder-open"></i>&nbsp; <a href="https://kido9797.github.io/category/tensorflow.html">tensorflow</a></span></li>
-            <li><span><i class="fa fa-comments"></i>&nbsp; <a href="https://kido9797.github.io/long-operations.html#disqus_thread" rel="bookmark" title="Disqus Comments">Long Operations</a></span></li>
-            <li>
-                <span>
-                    <i class="fa fa-tags"></i>&nbsp;
-                    <a href="https://kido9797.github.io/tag/tensorflow.html"><span class="label">tensorflow</span></a>
-                    <a href="https://kido9797.github.io/tag/python.html"><span class="label">python</span></a>
-                </span>
-            </li>
-        </ul>
-    </div>
-</div>
-    <div class="row summary">
-        <div class="small-12 medium-12 columns">
-            <p>How to deal with long lasting operations</p>
-            <p class='text-right'><a href="https://kido9797.github.io/long-operations.html">Continue reading&hellip;</a></p>
-        </div>
-    </div>
-</section>
-  <section class="summary">
-    <h3><a href="https://kido9797.github.io/installing-tf.html" rel="bookmark" title="Permalink to Installing TF">Installing TF</a></h3>
-    <div class="row info-bar" style="margin-left:0rem;margin-bottom:6px;">
-    <div class="small-12 columns">
-        <ul class="inline-list">
-            <li><span><i class="fa fa-calendar"></i>&nbsp; Sat 29 September 2018</span></li>
-            <li><span><i class="fa fa-folder-open"></i>&nbsp; <a href="https://kido9797.github.io/category/tensorflow.html">tensorflow</a></span></li>
-            <li><span><i class="fa fa-comments"></i>&nbsp; <a href="https://kido9797.github.io/installing-tf.html#disqus_thread" rel="bookmark" title="Disqus Comments">Installing TF</a></span></li>
-            <li>
-                <span>
-                    <i class="fa fa-tags"></i>&nbsp;
-                    <a href="https://kido9797.github.io/tag/tensorflow.html"><span class="label">tensorflow</span></a>
-                    <a href="https://kido9797.github.io/tag/python.html"><span class="label">python</span></a>
-                </span>
-            </li>
-        </ul>
-    </div>
-</div>
-    <div class="row summary">
-        <div class="small-12 medium-12 columns">
-            <p>how I set up the environment</p>
-            <p class='text-right'><a href="https://kido9797.github.io/installing-tf.html">Continue reading&hellip;</a></p>
-        </div>
-    </div>
-</section>
+        <section class="article">
+            <p>It is necessary to save some of the current status onto harddisk and use it later.  To save some status using pickle, it's not better than giving an example:</p>
+<div class="highlight"><pre><span></span><span class="n">my_data_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span>     <span class="p">:</span>   <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">&#39;b&#39;</span>     <span class="p">:</span>   <span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;my_obj&#39;</span><span class="p">:</span>   <span class="o">&lt;</span><span class="n">some_complex_object</span><span class="o">&gt;</span>
+<span class="p">}</span>
+<span class="n">pickle_file</span> <span class="o">=</span> <span class="s1">&#39;SOMEFILENAME.pickle&#39;</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">pickle_file</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Saving data to pickle file...&#39;</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">pickle_file</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">pfile</span><span class="p">:</span>
+            <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span>
+                <span class="n">my_data_dict</span><span class="p">,</span>
+                <span class="n">pfile</span><span class="p">,</span> <span class="n">pickle</span><span class="o">.</span><span class="n">HIGHEST_PROTOCOL</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Unable to save data to&#39;</span><span class="p">,</span> <span class="n">pickle_file</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+        <span class="k">raise</span>
+</pre></div>
 
 
+<p>and to restore:</p>
+<div class="highlight"><pre><span></span><span class="n">pickle_file</span> <span class="o">=</span> <span class="s1">&#39;SOMEFILENAME.pickle&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">pickle_file</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">pickle_data</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">pickle_data</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">pickle_data</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
+    <span class="n">my_obj</span> <span class="o">=</span> <span class="n">pickle_data</span><span class="p">[</span><span class="s1">&#39;my_obj&#39;</span><span class="p">]</span>
+    <span class="k">del</span> <span class="n">pickle_data</span>  <span class="c1"># free memory</span>
+</pre></div>    
+        </section>
+        <hr>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "https://kido9797.github.io"; // required: replace example with your forum shortname
+            var disqus_identifier = "pickls";
+            var disqus_url = "https://kido9797.github.io/pickls.html";
+            var disqus_title = "Pickls";
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
 </div>
                 </div>
