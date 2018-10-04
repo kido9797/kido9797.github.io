@@ -1,0 +1,368 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <link rel="shortcut icon" href="https://kido9797.github.io/images/kchan.jpg" />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kido" />
+        <title>Einstein's Riddle</title>
+        
+<meta name="description" content="&lt;p&gt;This was a question posted by my friend in a private forum, my friends are clever enough to solve it by hand.&lt;/p&gt;" />
+<meta name="keywords" content=" prolog misc  "/>
+
+        <!--[if !IE 7]>
+        <style type="text/css">
+            #main-content {display:table;height:100%}
+        </style>
+        <![endif]-->
+        <link rel="stylesheet" href="https://kido9797.github.io/theme/css/backdrop.css" />
+        <link rel="stylesheet" href="https://kido9797.github.io/theme/css/pygments.css" />
+        <script src="https://kido9797.github.io/theme/js/modernizr.js"></script>
+
+        <link href="https://kido9797.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Learning Notebook Full Atom Feed" />
+        <link href="https://kido9797.github.io/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="The Learning Notebook Categories Atom Feed" />
+
+        <script type="text/javascript">
+            var disqus_shortname = 'the-learning-notebook'; 
+
+            (function () {
+                var s = document.createElement('script'); s.async = true;
+                s.type = 'text/javascript';
+                s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+        </script>
+    </head>
+      
+
+    <body>
+        <div class="master-row">
+
+            <div class="content-pane main-content">
+                <nav class="top-bar" data-topbar role="navigation">
+                    <ul class="title-area">
+                        <li class="name"><!-- Leave this empty --></li>
+                        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                    </ul>
+                    <section class="top-bar-section">
+                        <ul class="left">
+                            <li><a href="https://kido9797.github.io/pages/about.html">About</a></li>
+                        </ul>
+                        <ul class="right">
+                            <li><a href="https://kido9797.github.io/category/kera.html">Kera</a></li>
+                            <li class="active"><a href="https://kido9797.github.io/category/misc.html">Misc</a></li>
+                            <li><a href="https://kido9797.github.io/category/python.html">Python</a></li>
+                            <li><a href="https://kido9797.github.io/category/tensorflow.html">Tensorflow</a></li>
+                        </ul>
+                    </section>
+                </nav>
+
+                <div class="row title-bar">
+                    <div class="small-12 columns">
+                        <h1><a href="https://kido9797.github.io">The Learning Notebook</a></h1><h2> <small>Journey to the Unknown</small></h2>
+                        <hr>
+                    </div>
+                </div>
+            
+                <div id="contents">
+<div class="row">
+    <div class="small-12 columns article">
+        <h2>Einstein's Riddle</h2>
+        <div class="row info-bar" style="margin-left:0rem;margin-bottom:6px;">
+    <div class="small-12 columns">
+        <ul class="inline-list">
+            <li><span><i class="fa fa-calendar"></i>&nbsp; Fri 05 October 2018</span></li>
+            <li><span><i class="fa fa-folder-open"></i>&nbsp; <a href="https://kido9797.github.io/category/misc.html">Misc</a></span></li>
+            <li><span><i class="fa fa-comments"></i>&nbsp; <a href="https://kido9797.github.io/einsteins-riddle.html#disqus_thread" rel="bookmark" title="Disqus Comments">Einstein's Riddle</a></span></li>
+            <li>
+                <span>
+                    <i class="fa fa-tags"></i>&nbsp;
+                    <a href="https://kido9797.github.io/tag/prolog.html"><span class="label">prolog</span></a>
+                    <a href="https://kido9797.github.io/tag/misc.html"><span class="label">misc</span></a>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+        <section class="article">
+            <p>This was a question posted by my friend in a private forum some years ago (&gt;6 years), my friends are clever enough to solve it by hand. I was too lazy, too stuborn to tackle it. And knowing it there were similar questions solved by <em>Prolog</em>, I tried to get my hands dirties and spent 2 or 3 or 4 hours to solve it.  </p>
+<p>Hopefully it's good enough.</p>
+<h3>Einstein Riddle</h3>
+<p>There is a street with five houses all in a row. Each house has a person with a different name and each house is painted a different colour. Each homeowner drinks a different type of beverage, owns a different type of pet and reads a different type of newspaper.</p>
+<p>Here are the clues to help you solve the puzzle :</p>
+<ol>
+<li>Jez lives in the red house.</li>
+<li>Liz keeps corgis as pets.</li>
+<li>Vlad drinks vodka.</li>
+<li>The green house is on the immediate left of the white house.</li>
+<li>The green house's owner drinks coffee.</li>
+<li>The owner who reads the Morning Star keeps a golden eagle.</li>
+<li>The owner of the purple house reads the Daily Express.</li>
+<li>The owner living in the centre house drinks milk.</li>
+<li>Nigel lives in the first house.</li>
+<li>The owner who reads the Guardian lives next to the one who keeps a tiger.</li>
+<li>The owner who keeps the stallion lives next to the one who reads the Daily Express.</li>
+<li>The owner who reads the Times drinks beer.</li>
+<li>Donald reads the Daily Mail.</li>
+<li>Nigel lives next to the blue house.</li>
+<li>The owner who reads the Guardian lives next to the one who drinks green tea.</li>
+</ol>
+<p>Now, the question is : Who owns the goldfish?</p>
+<p>This is the solution, </p>
+<p>Dont' scroll down if you plan to solve it.</p>
+<p>I have warned you.</p>
+<div class="highlight"><pre><span></span><span class="c1">% </span>
+<span class="c1">% Space of possible answers.</span>
+<span class="c1">%</span>
+<span class="nf">houses</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">[])</span> <span class="p">:-</span> <span class="p">!.</span>
+<span class="nf">houses</span><span class="p">(</span><span class="nv">N</span><span class="p">,</span> <span class="p">[(</span><span class="k">_</span><span class="nv">Name</span><span class="p">,</span><span class="k">_</span><span class="nv">Color</span><span class="p">,</span><span class="k">_</span><span class="nv">Pet</span><span class="p">,</span><span class="k">_</span><span class="nv">Drink</span><span class="p">,</span><span class="k">_</span><span class="nv">Read</span><span class="p">)|</span><span class="nv">T</span><span class="p">])</span> <span class="p">:-</span> <span class="nv">N1</span> <span class="o">is</span> <span class="nv">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nf">houses</span><span class="p">(</span><span class="nv">N1</span><span class="p">,</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% get the N-th member from a sequence</span>
+<span class="nf">seq</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="nv">H</span><span class="p">|</span><span class="k">_</span><span class="p">],</span> <span class="nv">H</span><span class="p">)</span> <span class="p">:-</span> <span class="p">!.</span>
+<span class="nf">seq</span><span class="p">(</span><span class="nv">N</span><span class="p">,</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">],</span> <span class="nv">R</span><span class="p">)</span> <span class="p">:-</span> <span class="nv">N1</span> <span class="o">is</span> <span class="nv">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nf">seq</span><span class="p">(</span><span class="nv">N1</span><span class="p">,</span><span class="nv">T</span><span class="p">,</span><span class="nv">R</span><span class="p">).</span>
+
+<span class="c1">% 1. Jez lives in the red house.</span>
+<span class="nf">db1</span><span class="p">(</span> <span class="p">[(</span><span class="s s-Atom">jez</span><span class="p">,</span><span class="s s-Atom">red</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)</span> <span class="p">|</span> <span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db1</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db1</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 2. Liz keeps corgis as pets.</span>
+<span class="nf">db2</span><span class="p">(</span> <span class="p">[(</span><span class="s s-Atom">liz</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">corgis</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)</span> <span class="p">|</span> <span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db2</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db2</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 3. Vlad drinks vodka.</span>
+<span class="nf">db3</span><span class="p">(</span> <span class="p">[(</span><span class="s s-Atom">vlad</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">vodka</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span> <span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db3</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db3</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 4. The green house is on the immediate left of the white house.</span>
+<span class="nf">db4</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">green</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">),(</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">white</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db4</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db4</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 5. The green house&#39;s owner drinks coffee.</span>
+<span class="nf">db5</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">green</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">coffee</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db5</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db5</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 6. The owner who reads the Morning Star keeps a golden eagle.</span>
+<span class="nf">db6</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">eagle</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">morning_star</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db6</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db6</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 7. The owner of the purple house reads the Daily Express.</span>
+<span class="nf">db7</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">purple</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">daily_express</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db7</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db7</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 8. The owner living in the centre house drinks milk.</span>
+<span class="nf">db8</span><span class="p">(</span> <span class="nv">Houses</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">seq</span><span class="p">(</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">Houses</span><span class="p">,</span> <span class="p">(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">milk</span><span class="p">,</span><span class="k">_</span><span class="p">)</span> <span class="p">).</span>
+
+<span class="c1">% 9. Nigel lives in the first house</span>
+<span class="nf">db9</span><span class="p">(</span> <span class="nv">Houses</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">seq</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">Houses</span><span class="p">,</span> <span class="p">(</span><span class="s s-Atom">nigel</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)</span> <span class="p">).</span>
+
+<span class="c1">% 10. The owner who reads the Guardian lives next to the one who keeps a tiger.</span>
+<span class="nf">db10</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">guardian</span><span class="p">),(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">tiger</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db10</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">tiger</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">),(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">guardian</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db10</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db10</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 11. The owner who keeps the stallion lives next to the one who reads the Daily Express.</span>
+<span class="nf">db11</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">daily_express</span><span class="p">),(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">stallion</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db11</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">stallion</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">),(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">daily_express</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db11</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db11</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 12. The owner who reads the Times drinks beer.</span>
+<span class="nf">db12</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">beer</span><span class="p">,</span><span class="s s-Atom">times</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db12</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db12</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 13. Donald reads the Daily Mail.</span>
+<span class="nf">db13</span><span class="p">(</span> <span class="p">[(</span><span class="s s-Atom">donald</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">daily_mail</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db13</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db13</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 14. Nigel lives next to the blue house.</span>
+<span class="nf">db14</span><span class="p">(</span> <span class="p">[(</span><span class="s s-Atom">nigel</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">),(</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">blue</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db14</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">blue</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">),(</span><span class="s s-Atom">nigel</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db14</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db14</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% 15. The owner who reads the Guardian lives next to the one who drinks green tea.</span>
+<span class="nf">db15</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">guardian</span><span class="p">),(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">green_tea</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db15</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">green_tea</span><span class="p">,</span><span class="k">_</span><span class="p">),(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">guardian</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">db15</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">db15</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="c1">% Who owns the goldfish?</span>
+<span class="nf">question</span><span class="p">(</span> <span class="p">[(</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="s s-Atom">fish</span><span class="p">,</span><span class="k">_</span><span class="p">,</span><span class="k">_</span><span class="p">)|</span><span class="k">_</span><span class="p">]</span> <span class="p">).</span>
+<span class="nf">question</span><span class="p">(</span> <span class="p">[</span><span class="k">_</span><span class="p">|</span><span class="nv">T</span><span class="p">]</span> <span class="p">)</span> <span class="p">:-</span> <span class="nf">question</span><span class="p">(</span><span class="nv">T</span><span class="p">).</span>
+
+<span class="nf">solution</span><span class="p">(</span><span class="nv">Houses</span><span class="p">)</span> <span class="p">:-</span>
+    <span class="nf">houses</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db1</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db2</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db3</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db4</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db5</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db6</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db7</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db8</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db9</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db10</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db11</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db12</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db13</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db14</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">db15</span><span class="p">(</span><span class="nv">Houses</span><span class="p">),</span>
+    <span class="nf">question</span><span class="p">(</span><span class="nv">Houses</span><span class="p">).</span>
+</pre></div>
+
+
+<p>To get the solutions, here was the commands:</p>
+<div class="highlight"><pre><span></span><span class="p">|</span> <span class="s s-Atom">?-</span> <span class="nf">solution</span><span class="p">(</span><span class="nv">Houses</span><span class="p">).</span>
+
+<span class="nv">Houses</span> <span class="o">=</span> <span class="p">[(</span><span class="s s-Atom">nigel</span><span class="p">,</span><span class="s s-Atom">purple</span><span class="p">,</span><span class="s s-Atom">tiger</span><span class="p">,</span><span class="s s-Atom">green_tea</span><span class="p">,</span><span class="s s-Atom">daily_express</span><span class="p">),(</span><span class="s s-Atom">vlad</span><span class="p">,</span><span class="s s-Atom">blue</span><span class="p">,</span><span class="s s-Atom">stallion</span><span class="p">,</span><span class="s s-Atom">vodka</span><span class="p">,</span><span class="s s-Atom">guardian</span><span class="p">),(</span><span class="s s-Atom">jez</span><span class="p">,</span><span class="s s-Atom">red</span><span class="p">,</span><span class="s s-Atom">eagle</span><span class="p">,</span><span class="s s-Atom">milk</span><span class="p">,</span><span class="s s-Atom">morning_star</span><span class="p">),(</span><span class="s s-Atom">donald</span><span class="p">,</span><span class="s s-Atom">green</span><span class="p">,</span><span class="s s-Atom">fish</span><span class="p">,</span><span class="s s-Atom">coffee</span><span class="p">,</span><span class="s s-Atom">daily_mail</span><span class="p">),(</span><span class="s s-Atom">liz</span><span class="p">,</span><span class="s s-Atom">white</span><span class="p">,</span><span class="s s-Atom">corgis</span><span class="p">,</span><span class="s s-Atom">beer</span><span class="p">,</span><span class="s s-Atom">times</span><span class="p">)]</span> <span class="s s-Atom">?</span> <span class="nf">a</span>
+
+<span class="p">(</span><span class="mi">18</span> <span class="s s-Atom">ms</span><span class="p">)</span> <span class="s s-Atom">no</span>
+</pre></div>    
+        </section>
+        <hr>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = "the-learning-notebook"; // required: replace example with your forum shortname
+            var disqus_identifier = "einstein&#39;s-riddle";
+            var disqus_url = "https://kido9797.github.io/einsteins-riddle.html";
+            var disqus_title = "Einstein&#39;s Riddle";
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</div>
+                </div>
+
+                <footer class="show-for-large-up">
+<div class="row">
+    <div class="small-6 medium-3 columns">
+        <ul class="left-nav">
+            <li><a href="https://kido9797.github.io">Home &nbsp;<i class="fa fa-home fa-fw"></i></a></li>
+            <li><a href="https://kido9797.github.io/categories.html">Categories &nbsp;<i class="fa fa-folder-open fa-fw"></i></a></li>
+        </ul>
+    </div>
+    <div class="small-6 medium-3 medium-push-6 columns">
+        <ul class="right-nav">
+            <li><a href="https://kido9797.github.io/feeds/all.atom.xml"><i class="fa fa-rss fa-fw"></i>&nbsp; Feed</a></li>
+            <li><a href="https://kido9797.github.io/archives.html"><i class="fa fa-archive fa-fw"></i>&nbsp; Archives</a></li>
+        </ul>
+    </div>
+    <div class="small-12 medium-6 medium-pull-3 columns text-center">
+        <p class="tag-cloud">
+            <a href="https://kido9797.github.io/tags.html"><i class="fa fa-tags"></i>&nbsp;Tags:</a>&nbsp;&nbsp;
+            &nbsp;&hellip;
+        </p>
+    </div>
+    <div class="small-12 columns sub-footer">
+        <hr>
+        <div class="small-12 medium-6 columns">
+            <p class="small-text-center medium-text-left">
+                &copy; 2018 Kido 
+                <!-- <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="cc.png" /></a>-->
+            </p>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <p class="small-text-center medium-text-right">
+                Proudly powered by <a href="http://blog.getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+            </p>
+        </div>
+    </div>
+</div>                </footer>
+            </div>
+            
+            <div class="image-pane main-content" style="background: url('https://kido9797.github.io/images/beverage-3157395_1920.jpg'); background-size:cover; background-position: right;">
+                <div class="row">
+                    <div class="small-12 medium-4 large-12 columns">
+                        <h5 class='text-center'>About</h5>
+                        <div class="about-me">
+                            <div class="hide-for-medium-only small-3 columns no-buffer">
+                                <a class="th" href="https://kido9797.github.io/images/kchan.jpg">
+                                    <img src="https://kido9797.github.io/images/kchan.jpg">
+                                </a>
+                            </div>
+                            <div class="small-9 medium-12 large-9 columns text-justify">
+                                Journey to the Unknown
+                            </div>
+                            <div class="small-12 columns">
+                                <ul class="inline-center social-list">
+                                    <li><a href="mailto:kido9797@hotmail.com"><i class="fa fa-envelope"></i>&nbsp; Email</a></li>
+                                    <li><a href="https://www.facebook.com/keithcc"><i class="fa fa-facebook"></i>&nbsp; Facebook</a></li>
+                                    <li><a href="http://google.com/+KeithChanKeithChan"><i class="fa fa-google-plus"></i>&nbsp; Google-plus</a></li>
+                                    <li><a href="https://twitter.com/kido97"><i class="fa fa-twitter"></i>&nbsp; Twitter</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="small-12 medium-4  large-12 columns link-list">
+                        <h5 class='text-center'>Links</h5>
+                        <ul class="inline-center">
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                    </div>
+
+<!--
+                    <div class="small-12 medium-3 large-12 columns">
+                    </div>
+-->
+               </div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <footer class="hide-for-large-up">
+<div class="row">
+    <div class="small-6 medium-3 columns">
+        <ul class="left-nav">
+            <li><a href="https://kido9797.github.io">Home &nbsp;<i class="fa fa-home fa-fw"></i></a></li>
+            <li><a href="https://kido9797.github.io/categories.html">Categories &nbsp;<i class="fa fa-folder-open fa-fw"></i></a></li>
+        </ul>
+    </div>
+    <div class="small-6 medium-3 medium-push-6 columns">
+        <ul class="right-nav">
+            <li><a href="https://kido9797.github.io/feeds/all.atom.xml"><i class="fa fa-rss fa-fw"></i>&nbsp; Feed</a></li>
+            <li><a href="https://kido9797.github.io/archives.html"><i class="fa fa-archive fa-fw"></i>&nbsp; Archives</a></li>
+        </ul>
+    </div>
+    <div class="small-12 medium-6 medium-pull-3 columns text-center">
+        <p class="tag-cloud">
+            <a href="https://kido9797.github.io/tags.html"><i class="fa fa-tags"></i>&nbsp;Tags:</a>&nbsp;&nbsp;
+            &nbsp;&hellip;
+        </p>
+    </div>
+    <div class="small-12 columns sub-footer">
+        <hr>
+        <div class="small-12 medium-6 columns">
+            <p class="small-text-center medium-text-left">
+                &copy; 2018 Kido 
+                <!-- <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="cc.png" /></a>-->
+            </p>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <p class="small-text-center medium-text-right">
+                Proudly powered by <a href="http://blog.getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+            </p>
+        </div>
+    </div>
+</div>            </footer>
+        </div>
+        
+        
+        <script src="https://kido9797.github.io/theme/js/jquery.min.js"></script>
+        <script src="https://kido9797.github.io/theme/js/foundation.min.js"></script>
+        <script src="https://kido9797.github.io/theme/js/app.js"></script>
+    </body>
+  
+</html>
