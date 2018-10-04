@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>The Learning Notebook</title><link href="https://kido9797.github.io/" rel="alternate"></link><link href="https://kido9797.github.io/feeds/all.atom.xml" rel="self"></link><id>https://kido9797.github.io/</id><updated>2018-10-05T00:35:00+08:00</updated><entry><title>Einstein's Riddle</title><link href="https://kido9797.github.io/einsteins-riddle.html" rel="alternate"></link><published>2018-10-05T00:35:00+08:00</published><updated>2018-10-05T00:35:00+08:00</updated><author><name>Kido</name></author><id>tag:kido9797.github.io,2018-10-05:/einsteins-riddle.html</id><summary type="html">&lt;p&gt;This was a question posted by my friend in a private forum, my friends are clever enough to solve it by hand.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This was a question posted by my friend in a private forum some years ago (&amp;gt;6 years), my friends are clever enough to solve it by hand. I was too lazy, too stuborn to tackle it. And knowing it there were similar questions solved by &lt;em&gt;Prolog&lt;/em&gt;, I tried to get my hands dirties and spent 2 or 3 or 4 hours to solve it.  &lt;/p&gt;
 &lt;p&gt;Hopefully it's good enough.&lt;/p&gt;
+&lt;p&gt;Here is the question:&lt;/p&gt;
 &lt;h3&gt;Einstein Riddle&lt;/h3&gt;
 &lt;p&gt;There is a street with five houses all in a row. Each house has a person with a different name and each house is painted a different colour. Each homeowner drinks a different type of beverage, owns a different type of pet and reads a different type of newspaper.&lt;/p&gt;
 &lt;p&gt;Here are the clues to help you solve the puzzle :&lt;/p&gt;
@@ -24,20 +25,67 @@
 &lt;p&gt;Now, the question is : Who owns the goldfish?&lt;/p&gt;
 &lt;p&gt;This is the solution, &lt;/p&gt;
 &lt;p&gt;Dont' scroll down if you plan to solve it.
-.
-.
-.
-.
-.
-.
-.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
 I have warned you.
-.
-.
-.
-.
-.
-.&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;% &lt;/span&gt;
 &lt;span class="c1"&gt;% Space of possible answers.&lt;/span&gt;
 &lt;span class="c1"&gt;%&lt;/span&gt;
