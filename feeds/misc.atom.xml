@@ -3,16 +3,17 @@
 &lt;p&gt;Originally it's in Chinese:&lt;/p&gt;
 &lt;p&gt;It reads:&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;汽水$2可買1支，
-4個樽蓋可換1支汽水，
-2個空樽又可換1支汽水，&lt;/p&gt;
+&lt;p&gt;汽水$2可買1支，&lt;br&gt;
+4個樽蓋可換1支汽水， &lt;br&gt;
+2個空樽又可換1支汽水， &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;$10可飲到多少支汽水？&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;In plain English, it's like:&lt;/p&gt;
-&lt;p&gt;Soft-drink $2 per bottle, 
-4 bottle-caps can exchange for 1 soft-drink
-2 empty bottles can exchange for 1 soft-drink&lt;/p&gt;
+&lt;p&gt;Soft-drink $2 per bottle, &lt;br&gt;
+4 bottle-caps can exchange for 1 soft-drink &lt;br&gt;
+2 empty bottles can exchange for 1 soft-drink &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Question&lt;/em&gt;: How many soft-drink can $10 have?&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;Again, it could be solved by my favorite Prolog:&lt;/p&gt;
 &lt;p&gt;Here is how:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;% M = Money on hand&lt;/span&gt;
