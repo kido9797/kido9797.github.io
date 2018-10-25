@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Learning Notebook - Misc</title><link href="https://kido9797.github.io/" rel="alternate"></link><link href="https://kido9797.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://kido9797.github.io/</id><updated>2018-10-25T00:30:00+08:00</updated><entry><title>HK's TSA Question (Chinese)</title><link href="https://kido9797.github.io/hks-tsa-question-chinese.html" rel="alternate"></link><published>2018-10-25T00:30:00+08:00</published><updated>2018-10-25T00:30:00+08:00</updated><author><name>Kido</name></author><id>tag:kido9797.github.io,2018-10-25:/hks-tsa-question-chinese.html</id><summary type="html">&lt;p&gt;TSA question in prolog&lt;/p&gt;</summary><content type="html">&lt;p&gt;汽水$2可買1支，
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Learning Notebook - Misc</title><link href="https://kido9797.github.io/" rel="alternate"></link><link href="https://kido9797.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://kido9797.github.io/</id><updated>2018-10-25T00:30:00+08:00</updated><entry><title>HK's TSA Question (Chinese)</title><link href="https://kido9797.github.io/hks-tsa-question-chinese.html" rel="alternate"></link><published>2018-10-25T00:30:00+08:00</published><updated>2018-10-25T00:30:00+08:00</updated><author><name>Kido</name></author><id>tag:kido9797.github.io,2018-10-25:/hks-tsa-question-chinese.html</id><summary type="html">&lt;p&gt;TSA question in prolog&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is a question for TSA students, I guess they're in Primary 3. &lt;/p&gt;
+&lt;p&gt;Originally it's in Chinese:&lt;/p&gt;
+&lt;p&gt;It reads:&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;汽水$2可買1支，
 4個樽蓋可換1支汽水，
-2個空樽又可換1支汽水，
-$10可飲到多少支汽水？&lt;/p&gt;
+2個空樽又可換1支汽水，&lt;/p&gt;
+&lt;p&gt;$10可飲到多少支汽水？&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;In plain English, it's like:&lt;/p&gt;
 &lt;p&gt;Soft-drink $2 per bottle, 
 4 bottle-caps can exchange for 1 soft-drink
