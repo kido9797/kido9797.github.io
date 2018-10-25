@@ -5,9 +5,9 @@
 $10可飲到多少支汽水？&lt;/p&gt;
 &lt;p&gt;In plain English, it's like:&lt;/p&gt;
 &lt;p&gt;Soft-drink $2 per bottle, 
-4 bottle-cap can exchange for 1 soft-drink
-2 empty bottle can exchange for 1 soft-drink
-Question: how many soft-drink can $10 have?&lt;/p&gt;
+4 bottle-caps can exchange for 1 soft-drink
+2 empty bottles can exchange for 1 soft-drink&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Question&lt;/em&gt;: How many soft-drink can $10 have?&lt;/p&gt;
 &lt;p&gt;Again, it could be solved by my favorite Prolog:&lt;/p&gt;
 &lt;p&gt;Here is how:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;% M = Money on hand&lt;/span&gt;
